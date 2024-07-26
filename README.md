@@ -42,26 +42,37 @@ The Family Cash Card application allows parents to manage allowance funds for th
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/bhanuprakash-chowdary/cashcard.git
+   git clone https://github.com/bhanuprakash-chowdary/family-cash-card.git
    cd family-cash-card
-   
+2. Build the project using Maven:
+   * mvn clean install
+
+## Running the Application
+1. Start the application:
+   * mvn spring-boot:run
 2. The application will be accessible at http://localhost:8080.
 
-API Endpoints
+## API Endpoints
 - Create a Cash Card: POST /cashcards
 - Edit a Cash Card: PUT /cashcards/{requestedId}
 - Delete a Cash Card: DELETE /cashcards/{requestedId}
 - View a Cash Card: GET /cashcards/{requestedId}
 - List Cash Cards: GET /cashcards
 
-3. Security
+## Testing
+- Another unique quality of this course is our Test-First approach to development. In the Labs, you will usually be writing tests before the implementation, then adding implementation in order to make your tests pass.
+
+## Security
 - Secure endpoints using Spring Security.
 - Configure user roles and permissions to control access.
 
-4. Project Structure
+## Project Structure
 - src/main/java/com/example/familycashcard - Main application code.
 - src/main/resources - Application configuration files.
 - src/test/java/com/example/familycashcard - Test cases.
 
-5. Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and submit pull requests.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
